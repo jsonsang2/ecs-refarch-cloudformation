@@ -60,7 +60,7 @@ Resources:
   PearlBackend:
     Type: AWS::CloudFormation::Stack
     Properties:
-      TemplateURL: https://jsonsang2.github.io/ecs-refarch-cloudformation/services/pearl-backend/service.yaml
+      TemplateURL: https://pearl-cloudformation.s3.ap-northeast-2.amazonaws.com/dev/service.yaml
       Parameters:
         VPC: !GetAtt VPC.Outputs.VPC
         Cluster: !GetAtt ECS.Outputs.Cluster
